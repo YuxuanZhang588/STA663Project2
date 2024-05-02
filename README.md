@@ -242,7 +242,16 @@ To match with the author's results presented in their paper, we tried multiple a
 
 | Detection | Segmentation |
 |  -------- | -------      |
-| 0.80499   | 0.79768 |
+|  0.80499  |   0.79768    |
+
+
+
+### References：
+- Abedeen, I., Rahman, M. A., Prottyasha, F. Z., Ahmed, T., Chowdhury, T. M., & Shatabda, S. (2023). FracAtlas: A Dataset for Fracture Classification, Localization and Segmentation of Musculoskeletal Radiographs. Scientific data, 10(1), 521. https://doi.org/10.1038/s41597-023-02432-4
+
+- OpenCV. (n.d.). Histogram equalization. Retrieved May 2, 2024, from https://docs.opencv.org/4.x/d5/daf/tutorial_py_histogram_equalization.html
+
+- Ultralytics. (n.d.). Home - Ultralytics YOLOv8 Docs. Retrieved May 2, 2024, from https://docs.ultralytics.com/
 
 
 
