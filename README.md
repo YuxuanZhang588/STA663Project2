@@ -235,3 +235,14 @@ To train the segmentation task, replace 'task=detect' with 'task=segment'.
 !yolo task=segment mode=train model=yolov8s.pt data=dataset/data.yaml epochs=30 imgsz=600
 ```
 The results and trained weights should be stored inside the folder 'runs', where you can check for the precisions, mAP, and other metrics. 
+
+# Updated Results on Vanilla Dataset
+
+To match with the author's results presented in their paper, we tried multiple approaches. Our first concern was with the converted segmentation masks, as we wrote our own script to convert them from COCO JSON format into YOLO txt format and we thought there might be some details that we missed (Normalization). So we went to the GitHub repository of [ultralytics]{https://github.com/ultralytics/JSON2YOLO/blob/master/README.md} and found this useful 'COCO2YOLO' converting tool. However, the converted annotations appear to be the same as our original ones. Then, we believe the discrepancy between our result and the author's result is because of the limited sample size. Thus, we tried to train the model multiple times with different seed number to get close to his precision. Here is what we got:
+
+| Detection | Segmentation |
+|  -------- | -------      |
+| 0.80499   | 0.79768 |
+
+
+
